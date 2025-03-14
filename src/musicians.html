@@ -1,0 +1,48 @@
+---
+layout: base.html
+title: Meet the Musicians
+---
+
+<!-- Musicians Section -->
+<div id="musicians" class="py-5">
+  <div class="container">
+    <h1 class="text-center mb-5">Meet the Musicians</h1>
+
+    {% for musician in musicians %}
+    <article class="musician-box row align-items-center mb-5">
+      {% if musician.musician_number == 1 %}
+      <!-- Text First -->
+      <div class="col-lg-6 order-lg-1">
+        <h2>{{ musician.name }}</h2>
+        <p>{{ musician.bio | safe }}</p>
+        {% if musician.link != "none" %}
+        <a href="{{ musician.link }}" target="_blank" class="btn btn-outline-dark mt-3 mb-3">{{ musician.link_text }}</a>
+        {% endif %}
+      </div>
+      <div class="col-lg-6 order-lg-2">
+        <img src="{{ musician.image }}" alt="{{ musician.name }}" class="img-fluid rounded shadow">
+      </div>
+      {% else %}
+      <!-- Image First -->
+      <div class="col-lg-6 order-lg-2">
+        <h2>{{ musician.name }}</h2>
+        <p>{{ musician.bio | safe }}</p>
+        {% if musician.link != "none" %}
+        <a href="{{ musician.link }}" target="_blank" class="btn btn-outline-dark mt-3 mb-3">{{ musician.link_text }}</a>
+        {% endif %}
+      </div>
+      <div class="col-lg-6 order-lg-1">
+        <img src="{{ musician.image }}" alt="{{ musician.name }}" class="img-fluid rounded shadow">
+      </div>
+      {% endif %}
+    </article>
+    {% endfor %}
+    
+    <!-- More Musicians Section -->
+    <div class="text-center mt-5">
+      <h3>More Musicians Coming Soon</h3>
+      <p>We’re still chasing people down to get their bios and photos (you know how it is). Stay tuned—there’s more talent to share!</p>
+      <p>Are you a Neil Young fan and want to play his songs with us? We’d love to hear from you. <a href="/contact/" class="text-dark">Get in touch</a> and let’s talk music.</p>
+    </div>
+  </div>
+</div>

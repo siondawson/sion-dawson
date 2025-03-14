@@ -1,0 +1,27 @@
+[
+    {   
+      "musician_number": 1,
+      "name": "Siôn Dawson",
+      "bio": "Siôn Dawson is the lead singer and driving force behind Neil Younger, a tribute project dedicated to celebrating the music of Neil Young. A lifelong fan of Neil’s timeless sound, Siôn brings his own personality and flair to each performance while meticulously recreating the essence of Neil’s style. From his playing techniques to the use of vintage amps, guitars, and pedals, Siôn ensures every detail reflects the spirit of Neil Young’s music.<br><br>One of Siôn’s most prized instruments is a Les Paul Gold Top, crafted by expert luthier Dave Dearnaley. Originally modified by a previous owner with Neil Young’s signature sound in mind, the guitar has become Siôn’s go-to for live performances, perfectly complementing his dedication to authenticity.<br><br>Outside of Neil Younger, Siôn is a multi-faceted musician who manages and performs with the Aderyn String Quartet, providing elegant music for weddings and events. He is classically trained but equally at home in the world of rock and pop, bringing versatility and depth to every project he takes on.",
+      "image": "/images/neil-younger-sion.JPG",
+      "link": "https://aderynstringquartet.com",
+      "link_text": "Visit Aderyn String Quartet Website"
+    },
+    {
+      "musician_number": 2,
+      "name": "Pete Burrows",
+      "bio": "Pete Burrows is an all-round band musician and an integral part of Neil Younger, showcasing his versatility across instruments. Though featured as the keys player in the band’s videos, Pete is equally skilled on bass and guitar, making him a true multi-instrumentalist. His ability to adapt and bring depth to any role ensures the band’s sound remains dynamic and cohesive.<br><br>Pete’s musical journey began at Bangor University, where he and Siôn first met. Over the years, Pete has honed his craft in various genres, becoming a go-to musician for live performances. Outside of Neil Younger, Pete channels his love for classic rock as a member of an ELO Tribute band, where he continues to explore his passion for legendary music.<br><br>With his diverse skill set and commitment to delivering authentic performances, Pete is an essential part of bringing Neil Younger’s tribute to Neil Young’s iconic sound to life.",
+      "image": "/images/neil-younger-keys.JPG",
+      "link": "none",
+      "link_text": "none"
+    },
+    {
+      "musician_number": 1,
+      "name": "Ollie Hando",
+      "bio": "Ollie Hando is the drummer for Neil Younger, bringing 20 years of experience behind the kit. Originally inspired by Ringo Starr’s drumming in The Beatles, he started with a love for classic rock but has since embraced almost every style of music. His playing focuses on delivering rock-solid yet technical beats without overcomplication, always locking in with the bass to form a tight rhythm section.<br><br>Ollie’s drumming journey began in high school, where he played in several bands and earned his Grade 8 drums qualification with Distinction. His gigging experience truly took off at Bangor University, where he studied Music Technology and became a go-to drummer for university bands and orchestras, performing across multiple genres.<br><br>Having played in bands spanning funk, rock, pop, rock 'n' roll, reggae, country, blues, jazz, and disco, Ollie brings versatility and feel to every performance. He is often praised as a \"quiet drummer,\" balancing power with precision to serve the music.",
+      "image": "/images/ollie-hando-drums.jpg",
+      "link": "none",
+      "link_text": "none"
+    }
+  ]
+  

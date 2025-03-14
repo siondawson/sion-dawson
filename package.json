@@ -1,0 +1,24 @@
+{
+  "name": "sion-dawson",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siondawson/sion-dawson.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/siondawson/sion-dawson/issues"
+  },
+  "homepage": "https://github.com/siondawson/sion-dawson#readme",
+  "description": "",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

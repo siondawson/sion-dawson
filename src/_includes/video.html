@@ -1,0 +1,15 @@
+---
+layout: base.html
+title: {{ video.title }}
+---
+
+<section class="py-5">
+  <div class="container">
+    <h1 class="text-center mb-5">{{ video.title }}</h1>
+    <div class="ratio ratio-16x9 mb-4">
+      <iframe src="{{ video.video_url }}" title="{{ video.title }}" allowfullscreen></iframe>
+    </div>
+    <p>{{ video.description | safe }}</p>
+    <a href="/videos" class="btn btn-secondary mt-3">Back to Videos</a>
+  </div>
+</section>

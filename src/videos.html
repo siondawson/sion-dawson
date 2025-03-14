@@ -1,0 +1,55 @@
+---
+layout: base.html
+title: Videos
+---
+
+<section id="lockdown-jams" class="py-5">
+    <div class="container">
+      <h1 class="text-center mb-5">Lockdown Jams - Neil Younger’s Collaborative Neil Young Tribute</h1>
+  
+      {% for video in videos %}
+        <!-- Precompute whether the ID is even -->
+        {% assign is_even = video.id | modulo: 2 %}
+        
+        {% if is_even == 0 %}
+        <!-- Even ID: Video First -->
+        <div class="card mb-5" style="background-color: rgba(255, 255, 255, 0.8); border: 1px solid #ddd; border-radius: 12px;">
+          <div class="row align-items-center flex-lg-row-reverse g-0">
+            <div class="col-lg-6 p-4">
+              <h2>{{ video.title }}</h2>
+              <p>{{ video.description | safe }}</p>
+              <!-- Add More Link -->
+            <a href="/videos/{{ video.id }}-{{ video.slug }}" class="btn btn-primary">More</a>
+            </div>
+            <div class="col-lg-6">
+              <div class="ratio ratio-16x9">
+                <iframe src="{{ video.video_url }}" title="{{ video.title }}" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% else %}
+        <!-- Odd ID: Text First -->
+        <div class="card mb-5" style="background-color: rgba(255, 255, 255, 0.8); border: 1px solid #ddd; border-radius: 12px;">
+          <div class="row align-items-center g-0">
+            <div class="col-lg-6 p-4">
+              <h2>{{ video.title }}</h2>
+              <p>{{ video.description | safe }}</p>
+              <!-- Add More Link -->
+            <a href="/videos/{{ video.id }}-{{ video.slug }}" class="btn btn-primary">More</a>
+            </div>
+            <div class="col-lg-6">
+              <div class="ratio ratio-16x9">
+                <iframe src="{{ video.video_url }}" title="{{ video.title }}" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+  
+  
+  
+  
