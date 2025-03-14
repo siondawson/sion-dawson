@@ -23,7 +23,7 @@ module.exports = function(eleventyConfig) {
   return {
     dir: {
       input: "src", // Input directory
-      output: "public", // Output directory
+      output: "docs", // Output directory
     },
   };
 };

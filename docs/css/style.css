@@ -1,0 +1,180 @@
+/* assets/css/style.css */
+
+/* General Body Styling */
+
+.navbar {
+    background-color: #f3d39b !important; /* Harvest Yellow */
+}
+
+.navbar-brand img {
+    height: 100px !important; /* Adjust the height as needed */
+    width: auto; /* Maintains the aspect ratio */
+    max-height: 100px; /* Ensures it doesn’t exceed a reasonable size */
+  }
+  
+
+body {
+    background-color: #f3d39b; /* Harvest Yellow */
+    font-family: 'Georgia', serif;
+    color: black;
+    margin: 0;
+    padding: 0;
+  }
+  
+/* Default Hero Section Styling (Landscape Image) */
+.hero-section {
+  height: 100vh;
+  background: url("../images/neil-younger-main-color.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed; /* Parallax effect */
+  color: white;
+}
+
+/* Media Query for Smaller Screens (Portrait Image) */
+@media (max-width: 768px) {
+  .hero-section {
+      background: url("../images/neil-younger-side-shot.JPG") no-repeat center center;
+      background-size: contain; /* Ensure the full image is visible */
+      background-attachment: scroll; /* Prevent parallax issues on mobile */
+  }
+}
+
+/* Additional Media Query for Very Small Screens */
+@media (max-width: 480px) {
+  .hero-section {
+      background-size: contain; /* Ensure no zooming on small devices */
+      background-position: top center; /* Adjust alignment for smaller screens */
+  }
+}
+
+  
+  
+  .hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .hero-section p {
+    font-size: 1.25rem;
+  }
+  
+  /* Image Styling */
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Buttons */
+  .btn-outline-dark {
+    border: 2px solid black;
+    background-color: transparent;
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn-outline-dark:hover {
+    background-color: black;
+    color: white;
+  }
+
+  /* General Image Styling */
+.img-fluid {
+    max-width: 100%; /* Ensures the image scales within its container */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 8px; /* Adds subtle rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds a soft shadow for depth */
+    margin-bottom: 20px; /* Adds some spacing below images */
+  }
+  
+  /* Specific Sections */
+  .about-section img {
+    width: 100%; /* Ensures the image takes up full width of its column */
+    max-height: 400px; /* Adds a max height to prevent overly tall images */
+    object-fit: cover; /* Crops the image nicely if it exceeds max height */
+  }
+  
+  .lockdown-jams-section img {
+    max-width: 80%; /* Centers the image and keeps it smaller for visual balance */
+    margin: 0 auto; /* Centers the image horizontally */
+    display: block; /* Ensures proper centering */
+  }
+  
+/* General Image Styling for Both Portrait and Landscape */
+.img-fluid {
+    max-width: 100%; /* Ensures the image scales within its container */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px; /* Adds subtle rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds a soft shadow for depth */
+  }
+  
+  /* Specific Styling for Musicians Section Images */
+  #musicians img {
+    max-width: 100%; /* Ensures the image doesn't overflow the container */
+    max-height: 400px; /* Caps height for both portrait and landscape images */
+    width: auto; /* Keeps the natural width for portrait images */
+    height: auto; /* Ensures proper scaling for both orientations */
+    display: block; /* Centers the image if it's smaller than the container */
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain; /* Keeps the image's natural proportions */
+  }
+  
+  /* Responsive Adjustments for Small Screens */
+  @media (max-width: 768px) {
+    #musicians img {
+      max-height: 300px; /* Reduces height for smaller screens */
+    }
+  }
+  
+
+  /* Styling for Each Musician Article */
+.musician-box {
+    border: 1px solid #ddd; /* Light border to define the box */
+    padding: 20px; /* Adds space inside the box */
+    border-radius: 12px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #ffffff00; /* Clean white background for the box */
+  }
+  
+  /* Add Some Space Between Articles */
+  .musician-box + .musician-box {
+    margin-top: 30px; /* Adds separation between each musician box */
+  }
+  
+  /* Responsive Adjustments for Small Screens */
+  @media (max-width: 768px) {
+    .musician-box {
+      text-align: center; /* Centers text for smaller screens */
+    }
+  
+    .musician-box img {
+      margin-bottom: 15px; /* Adds space below the image */
+    }
+  }
+  
+
+  /* Lockdown Jams Card Styling */
+.card {
+  background-color: rgba(0, 0, 0, 0) !important; /* Adjust opacity, matching your body background */
+  border: 1px solid rgba(255, 255, 255, 0.2) !important; /* Subtle border for separation */
+  border-radius: 12px; /* Rounded corners for a modern look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  color: rgb(0, 0, 0); /* Ensures text is readable on a darker background */
+}
+
+/* Card Text Padding */
+.card .p-4 {
+  padding: 20px; /* Adds consistent spacing inside the card */
+}
+
+/* Responsive Adjustments for Small Screens */
+@media (max-width: 768px) {
+  .card {
+    background-color: rgba(0, 0, 0, 0.7); /* Slightly darker for smaller screens */
+  }
+}
